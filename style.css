@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+* body #principal {
+  position: relative;
+  background: yellow;
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+  padding: 0;
+}
+
+* body #principal nav {
+  border: 2px solid black;
+}
+
+* body #principal nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+* body #principal #cadre {
+  position: absolute;
+  top: 0;
+  margin: 30px 30px;
+  border: 2px solid black;
+  width: 95%;
+  height: 90vh;
+}
+/*# sourceMappingURL=style.css.map */
