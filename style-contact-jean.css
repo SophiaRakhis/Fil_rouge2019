@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+* body #principal {
+  position: relative;
+  background: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+  padding: 0;
+}
+
+* body #principal p {
+  margin: 0 25px 5px 25px;
+}
+
+* body #principal nav {
+  border: 2px solid black;
+}
+
+* body #principal nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+* body #principal #cadre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0;
+  margin: 30px 30px;
+  border: 2px solid black;
+  width: 95%;
+  height: 90vh;
+}
+
+* body #principal #cadre p {
+  margin: 15px 20px;
+}
+
+* body #principal #cadre #scroll {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 50px;
+}
+
+* body #principal #cadre #contenu {
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+* body #principal #cadre img {
+  margin: 15px 10px;
+  height: 50px;
+  width: 50px;
+  background: white;
+}
+/*# sourceMappingURL=style-contact-jean.css.map */
