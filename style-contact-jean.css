@@ -81,6 +81,14 @@
   text-align: center justify;
 }
 
+* body #principal #cadre #contenu #about #img_jean {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 * body #principal #cadre img {
   margin: 15px 10px;
   height: 50px;

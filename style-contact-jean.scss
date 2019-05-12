@@ -48,9 +48,14 @@
                     h1 {
                         text-align: center;
                     } 
-                    p{
+                    p {
                         margin: 0 300px 0 300 px;
                         text-align: center justify;
+                    }
+                    #img_jean {
+                        display: flex;
+                        justify-content: space-around;
+
                     }
                 }
              }
