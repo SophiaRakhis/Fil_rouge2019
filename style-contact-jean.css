@@ -62,14 +62,23 @@
 * body #principal #cadre #scroll {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-bottom: 50px;
+  margin-bottom: 500px;
 }
 
 * body #principal #cadre #contenu {
-  height: 500px;
+  height: 50px;
   width: 100%;
   position: absolute;
   bottom: 0;
+}
+
+* body #principal #cadre #contenu #about h1 {
+  text-align: center;
+}
+
+* body #principal #cadre #contenu #about p {
+  margin: 0 300px 0 300 px;
+  text-align: center justify;
 }
 
 * body #principal #cadre img {
