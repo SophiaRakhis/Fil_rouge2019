@@ -26,7 +26,7 @@
 }
 
 * body #principal p {
-  margin: 0 25px 5px 25px;
+  margin: 0 25px 0 25px;
 }
 
 * body #principal nav {
@@ -87,6 +87,10 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+* body #principal #cadre #contenu #formulaire {
+  display: none;
 }
 
 * body #principal #cadre img {
