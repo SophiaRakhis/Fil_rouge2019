@@ -5,22 +5,49 @@
     margin: 0;
     padding: 0;
     height: 100vh;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
         #principal {
+    
          position: relative;
-         background: yellow;
+         background: #870000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+
+
+
+
          display: flex;
          justify-content: space-between;
          align-items: flex-end;
          height: 100%;
          padding: 0;
          p { 
-             margin: 0 25px 5px 25px;
+             margin: 0 30px 10px 30px;
+             font-size: 12px;
+             z-index: 4;
+
          } 
          nav {
-             border: 2px solid black;
+             position: relative;
+             z-index: 4;
              ul {
                  display: flex;
                  list-style: none;
+                 position: absolute;
+                 top: -28px;
+                 left: -66px;
+                 li {
+                     margin: 0 2px;
+                     img {
+                         height: 25px;
+                     }
+                 }
              }
          }  
          #cadre {
@@ -29,27 +56,57 @@
              position: absolute;
              top: 0;
              margin: 30px 30px;
-             border: 2px solid black;
              width: 95%;
              height: 90vh;
+             z-index: 3;
              p {
-                 margin: 15px 20px;
+                 margin: 15px 25px;
+                 font-size: 18px;
+                 z-index: 3;
              }
              #scroll {
                  align-self: flex-end;
                  margin-bottom: 50px;
+                 z-index: 3;
              }
              #contenu {
-                 height: 500px;
+                 height: 100%;
                  width:100%;
                  position: absolute;
                  bottom: 0;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 border-radius: 10px;
+                 
+                 background: #FEAC5E;  /* fallback for old browsers */
+                 background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+                 background: linear-gradient(to right, rgba(75, 192, 200, 0.26), rgba(199, 121, 208, 0.274), rgba(254, 171, 94, 0.274)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                 video { 
+
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    min-width: 100%;
+                    min-height: 100%;
+                    width: auto;
+                    height: auto;
+                    z-index: -10;
+                    transform: translateX(-50%) translateY(-50%);
+                  background-size: cover;
+                  transition: 1s opacity;
+                  opacity: 1.5;
+                  
+                  
+                 }
              }
                  img {
-                 margin: 15px 10px;
-                 height: 50px;
-                 width: 50px;
-                 background: white;
+                 margin: 15px 20px;
+                 height: 60px;
+                 width: 60px;
+                 z-index: 3;
+                 
                  }
                  
              }
