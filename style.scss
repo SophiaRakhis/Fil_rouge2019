@@ -1,58 +1,99 @@
-* {
- margin: 0;
- padding: 0;
-    body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-        #principal {
-         position: relative;
-         background: yellow;
-         display: flex;
-         justify-content: space-between;
-         align-items: flex-end;
-         height: 100%;
-         padding: 0;
-         p { 
-             margin: 0 25px 5px 25px;
-         } 
-         nav {
-             border: 2px solid black;
-             ul {
-                 display: flex;
-                 list-style: none;
-             }
-         }  
-         #cadre {
-             display: flex;
-             justify-content: space-between;
-             position: absolute;
-             top: 0;
-             margin: 30px 30px;
-             border: 2px solid black;
-             width: 95%;
-             height: 90vh;
-             p {
-                 margin: 15px 20px;
-             }
-             #scroll {
-                 align-self: flex-end;
-                 margin-bottom: 50px;
-             }
-             #contenu {
-                 height: 500px;
-                 width:100%;
-                 position: absolute;
-                 bottom: 0;
-             }
-                 img {
-                 margin: 15px 10px;
-                 height: 50px;
-                 width: 50px;
-                 background: white;
-                 }
-                 
-             }
-         }
+
+#contenu {
+    height: 500px;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    .section1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    }
+
+    .parent{
+        flex:1 0 18vw;/* grossir retrecir largeur*/
+        height: 25vw;
+        position: relative;
+        overflow: hidden;
+        margin-right: 8px;
+    }
+    .parent img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .calque2{
+        position: absolute;
+        left: 0;
+        top:0;
+        transition: .5s;
+    }
+    h2{
+        color:white;
+        text-transform:uppercase;
+        position: absolute;
+        left: 13%;
+        top: 50%;
+        right: 8%;;
+        text-align:center;
+        opacity: 0;
+    }
+    .parent:hover .calque2{
+        opacity: 0;
+        transform: scale(1.8)
+    }
+    .parent:hover h2{
+        opacity: 1;
+        transform: scale(1);
+        font-weight: 900;
+        font-size: 28px;
+    }
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color:white;
+        margin: auto;
+        padding: 100px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor:pointer;
+    }
+    #myBtn{
+        color: white;
+        position: absolute;
+        top:50%;
+        left:30%;
+        border: none;
+        font-size: 28px;
+        font-weight: bold;
+        z-index: 1;
+        background-color: rgba(0, 0, 255, 0);
     }
 }
+
