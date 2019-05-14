@@ -20,9 +20,27 @@
                             <p>When we allow ourselves to feel, we find keys to reactions, emotions, and laughter. It takes bravery to reach it because brave people never deny themselves what they truly want. We believe this is how we create moments that feel equal and reach far beyond the situation, a relationship, the event or even the photography captured of it. That is why we are on a journey within, to reach out. We always strive to create the ultimate experience. In other words, we strive to create a 21.AGENCY moment.</br></p>
                             <p>21.AGENCY is a unique Web development agency offering tailor-made services to individuals and companies who wish to amplify their online experience. While we are mostly known for our spectacular coding, our services also include creative Web development, UX & UI Design and Social media.</br></p>
                             <p>21.AGENCY started in spring 2019 with four learners from Simplon who shared the same vision about Web development. Today 21.AGENCY consists of four developers with different backgrounds. Together we have an extensive experience in Music, Coding and Production and have learned firsthand the necessary ingredients for coding to stand-out. We aim to leverage this experience to help clients strengthen their online publication.</br></p>
-                            <h1>Want to get in touch?</h1>
-                                <input id="cliquemoi" type="submit" value="Click here!" >
-                                </br>
+                            <h1>Want to get in touch?</h1></br>
+                                <!-- Trigger/Open The Modal -->
+                                <button id="myBtn">Click Here!</button>
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <form method="POST" action="traitement.html">
+                                            <input type="text" name="Nom" placeholder="Name" required><br/><br/>
+                                            <input type="email" name="Email" placeholder="Email" required><br/><br/>
+                                            <input type="tel" name="Téléphone" placeholder="Phone"><br/><br/>
+                                            <textarea name="Mesage" rows="10" cols="50" placeholder="Msg"></textarea><br/><br/>
+                                            <input type="checkbox" name="Termes" required>
+                                            <p>Accept terms of use</p>
+                                            <p>(view terms of use)</p>
+                                            <input type="submit" value="Send">
+                                        </form>
+                                    </div>
+                                </div>
+                                </div>
                             <h1>Get Social</h1>
                                 <div id="img_jean">
                                     <img src="./images_jean/1.jpeg" alt="">
@@ -33,18 +51,6 @@
                                     <img src="./images_jean/6.jpeg" alt="">
                                     <img src="./images_jean/7.jpeg" alt="">
                                 </div>
-                        </div>
-                        <div id="formulaire">
-                            <form method="POST" action="traitement.html">
-                                <input type="text" name="Nom" placeholder="Name" required><br/><br/>
-                                <input type="email" name="Email" placeholder="Email" required><br/><br/>
-                                <input type="tel" name="Téléphone" pattern="[0-9]{10}" placeholder="Phone"><br/><br/>
-                                <textarea name="Mesage" rows="10" cols="50" placeholder="Msg"></textarea><br/><br/>
-                                <input type="checkbox" name="Termes" required>
-                                <p>Accept terms of use</p>
-                                <p>(view terms of use)</p>
-                                <input type="submit" value="Send">
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -60,5 +66,32 @@
         
     </section>
 <script src="./js-contact-jean.js"></script>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
 </body>
 </html>
