@@ -1,0 +1,59 @@
+* body #principal #cadre #contenu {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  box-sizing:  border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+
+  background-color: black;
+}
+
+* body #principal #cadre #contenu  div.photo {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  height:50%;
+  width: 33.3%;  
+  margin:auto 0;
+  padding: 0;
+ 
+  
+}
+
+
+* body #principal #cadre #contenu  div.photo img{
+
+    height:100%;
+    width:100%;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    opacity: 0.4;
+    position: absolute; 
+ 
+}
+
+ body #principal #cadre #contenu  div.photo img:hover{
+    opacity: 1;
+}
+
+
+
+
+* body #principal #cadre #contenu  div.photo img img.log:hover{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+
+
